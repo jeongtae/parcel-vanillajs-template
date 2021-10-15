@@ -116,3 +116,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# OS specific temporal files
+.DS_Store
+thumbs.db
+desktop.ini
