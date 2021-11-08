@@ -2,18 +2,27 @@
   "name": "parcel-vanillajs-template",
   "version": "1.0.0",
   "license": "MIT",
+  "source": "src/index.html",
+  "browserslist": "> 1%, ie 11, not dead",
+  "targets": {
+    "default": {
+      "distDir": "dist",
+      "publicUrl": "/",
+      "scopeHoist": true,
+      "optimize": true,
+      "sourceMap": true
+    }
+  },
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build --public-url '/' src/index.html",
-    "clean": "rimraf dist .cache"
+    "start": "parcel",
+    "build": "parcel build",
+    "build:no-minify": "parcel build --no-optimize --no-content-hash",
+    "clean": "rimraf dist .parcel-cache"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
-    "autoprefixer": "^9.8.6",
-    "cssnano": "^4.1.11",
-    "parcel-bundler": "^1.12.5",
-    "postcss": "^7.0.36",
+    "parcel": "^2.0.0",
+    "postcss": "^8.3.11",
+    "postcss-preset-env": "^6.7.0",
     "rimraf": "^3.0.2"
   }
 }
