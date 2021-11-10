@@ -16,7 +16,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build:no-minify": "parcel build --no-optimize --no-content-hash",
+    "build:no-minify": "parcel build --no-optimize",
     "clean": "rimraf dist .parcel-cache"
   },
   "devDependencies": {
