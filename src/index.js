@@ -1,3 +1,6 @@
-import App from "./components/App";
+import "./polyfills";
+import "./global.css";
+
+import App from "~/src/components/App";
 
 new App(document.getElementById("app"));
